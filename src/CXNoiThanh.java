@@ -27,5 +27,12 @@ public class CXNoiThanh extends ChuyenXe{
 		doanhThu = donGia * soKm;
 		return doanhThu;
 	}
+	
+	//toString()
+	@Override
+	public String toString() {
+		return super.toString()
+				+ "\n[SO TUYEN]: " + soTuyen;
+	}
 
 }

@@ -27,5 +27,11 @@ public class ChuyenXe {
 	double tinhDoanhThu() {
 		return 0;
 	}
+	
+	@Override
+	public String toString() {
+		return  "[MA CX]: " + maCX + "\n" +
+				"[HO TEN TX]: " + hoTenTX;
+	}
 
 }
