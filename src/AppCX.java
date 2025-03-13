@@ -3,11 +3,13 @@ public class AppCX {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		CXInput cxIn;
+		//CXInput cxIn;
 		
-		cxIn = new CXInput();
+		//cxIn = new CXInput();
 		
-		cxIn.input();
+		//cxIn.input();
+		CXMenu cxMenu = new CXMenu();
+		cxMenu.controlLoop();
 
 	}
 
