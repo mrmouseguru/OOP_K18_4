@@ -27,5 +27,11 @@ public class CXNgoaiThanh extends ChuyenXe{
 		doanhThu = donGia * soNgayDi;
 		return doanhThu;
 	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "\n[NOI DEN]: " + noiDen +
+				"\n[SO NGAY DI]: " + soNgayDi;
+	}
 
 }

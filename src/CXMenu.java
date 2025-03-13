@@ -8,6 +8,7 @@ public class CXMenu {
 	Scanner in;
 	String prompt;
 	CXInput cxInput;
+	CXControlPrint cxControlPrint;
 	
 	// ô 3
 	CXMenu(){
@@ -15,7 +16,7 @@ public class CXMenu {
 		in = new Scanner(System.in);
 		prompt = "->";
 		cxInput = new CXInput();
-		
+		cxControlPrint = new CXControlPrint();
 	}
 	
 	CXMenu(PrintWriter _out,
@@ -66,10 +67,21 @@ public class CXMenu {
 				continue;
 			}
 			
+			if("print".equalsIgnoreCase(command)) {
+				print();
+				continue;
+			}
+			
 		}
 	}
 
 	
+
+	private void print() {
+		
+		//gửi thông điệp
+		cxControlPrint.printCX();
+	}
 
 	private void add() {
 		// gửi thông điệp đến hành vi input()
